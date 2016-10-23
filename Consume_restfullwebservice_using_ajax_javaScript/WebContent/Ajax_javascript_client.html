@@ -1,0 +1,57 @@
+
+
+<html>
+<head>
+<title></title>
+
+<script language="javascript">
+    var xmlhttp;
+    function init() {
+       // put more code here in case you are concerned about browsers that do not provide XMLHttpRequest object directly
+       alert("pitambar");
+       xmlhttp = new XMLHttpRequest();
+    }
+    function getdetails() {
+    	init();
+    	var name =  document.getElementById("name").value;
+        var tname =  document.getElementById("tname").value;
+        var url = "http://localhost:8084/RestEasy_all_kind_of_service/rest/services/rest/getQuery?name="+name+"&tutorialName="+tname;
+        xmlhttp.open('GET',url,true);
+        xmlhttp.send(null);
+        xmlhttp.onreadystatechange = function() {
+
+               
+               console.log("happy");
+               
+                  if ( xmlhttp.status == 200) {
+                	  //alert(xmlhttp.responseText);
+                      document.getElementById("mydiv").innerHTML ="Rest_response=  "+ xmlhttp.responseText; 
+                 
+              }
+        };
+    }
+  </script>
+</head>
+<body>
+	<h1>Call restfull Service</h1>
+	<table>
+		<tr>
+			<td>Name::</td>
+			<td><input type="text" id="name" size="10" />
+		</tr>
+		<tr>
+			<td>TutorialName::</td>
+			<td><input type="text" id="tname" size="15"> <br></td>
+		</tr>
+		<tr>
+			<td>
+				<div id="mydiv">
+					<h1>Response:::</h1>
+				</div>
+			</td>
+			<td><br> <input type="button" value="Get Details"
+				onclick="getdetails()" /></td>
+		</tr>
+	</table>
+</body>
+</html>

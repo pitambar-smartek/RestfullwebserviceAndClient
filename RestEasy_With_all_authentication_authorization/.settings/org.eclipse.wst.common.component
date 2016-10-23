@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="RestEasy_With_all_authentication_authorization">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="RestEasy_With_all_authentication_authorization"/>
+        <property name="java-output-path" value="/RestEasy_With_all_authentication_authorization/build/classes"/>
+    </wb-module>
+</project-modules>

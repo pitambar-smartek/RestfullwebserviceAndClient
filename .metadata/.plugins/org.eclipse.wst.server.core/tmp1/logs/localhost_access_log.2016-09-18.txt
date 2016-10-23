@@ -1,0 +1,8 @@
+0:0:0:0:0:0:0:1 - - [18/Sep/2016:21:41:47 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [18/Sep/2016:21:41:48 +0530] "GET /SpringSecurityOAuth2Example/ HTTP/1.1" 404 1050
+0:0:0:0:0:0:0:1 - - [18/Sep/2016:21:42:24 +0530] "GET /SpringSecurityOAuth2Example/user/ HTTP/1.1" 404 1060
+127.0.0.1 - - [18/Sep/2016:21:44:40 +0530] "POST /SpringSecurityOAuth2Example/oauth/token?grant_type=password&username=bill&password=abc123 HTTP/1.1" 404 1072
+0:0:0:0:0:0:0:1 - - [18/Sep/2016:21:45:57 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [18/Sep/2016:21:46:12 +0530] "GET /manager/html HTTP/1.1" 404 1018
+0:0:0:0:0:0:0:1 - - [18/Sep/2016:21:46:15 +0530] "GET /manager/html HTTP/1.1" 404 1018
+0:0:0:0:0:0:0:1 - - [18/Sep/2016:21:46:18 +0530] "GET /manager/html HTTP/1.1" 404 1018
